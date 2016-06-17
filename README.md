@@ -5,6 +5,10 @@ python3.5 tutorial 정리 레파지토리
 - 참고 페이지
     - https://docs.python.org/3/tutorial/index.html
 
+- Git Wiki Markdown
+    - https://guides.github.com/features/mastering-markdown/
+    - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
 # 목차
 
 ### 1주차
