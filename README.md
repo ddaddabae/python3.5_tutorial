@@ -24,10 +24,10 @@ python3.5 tutorial 정리 레파지토리
 ### 2주차
 
 - 7. Input and Output: 현정
-- 8. Errors and Exceptions: 세린
+- [8. Errors and Exceptions](./chapter08.md): 세린 
 - 9. Classes: 민정
 - 10. Brief Tour of the Standard Library: 현욱
-- 11. Brief Tour of the Standard Library – Part II: 세린
+- [11. Brief Tour of the Standard Library – Part II](./chapter11.md): 세린 
 
 
 ### 3주차
