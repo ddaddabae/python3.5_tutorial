@@ -202,7 +202,10 @@ KeyError: 'primary'
 ```
 
 ## 11.7 Tools for workign with lists
-* ...
+* 많은 자료구조들은 built-in list 형을 필요로 함
+* 하지만 다른 성능 trade-off로 인해 다른 구현을 필요로함
+* array 모듈은 유일한 데이터많은 저장하는 array() obj를 제공함
+* 아래 예제는 16byte 대신 2byte unsigned 이진 수를 저장하는 (typecode "H") list obj의 사용을 보여줌
 ```python
 >>> from array import array
 >>> a = array('H', [4000, 10, 700, 22222])
@@ -211,7 +214,9 @@ KeyError: 'primary'
 >>> a[1:3]
 array('H', [10, 700])
 ```
-* ... 
+* collection 모듈은 deque() obj를 제공
+  * 왼쪽의 append와 pop을 더 빠르게 함
+  * 가운데에서 append하고 pop하는 것은 더 느림
 ```python
 >>> from collections import deque
 >>> d = deque(["task1", "task2", "task3"])
@@ -228,7 +233,7 @@ def breadth_first_search(unsearched):
             return m
         unsearched.append(m)
 ```
-* ...
+* bisect 모듈은 정렬에 대한 기능들을 제공
 ```python
 >>> import bisect
 >>> scores = [(100, 'perl'), (200, 'tcl'), (400, 'lua'), (500, 'python')]
@@ -236,7 +241,7 @@ def breadth_first_search(unsearched):
 >>> scores
 [(100, 'perl'), (200, 'tcl'), (300, 'ruby'), (400, 'lua'), (500, 'python')]
 ```
-* ...
+* heapq 모듈은 list에 heap 기반의 구현 기능을 가짐
 ```python
 >>> from heapq import heapify, heappop, heappush
 >>> data = [1, 3, 5, 7, 9, 2, 4, 6, 8, 0]
@@ -247,7 +252,14 @@ def breadth_first_search(unsearched):
 ```
 
 ## 11.8 Decimal Floating point arighmetic
-* ...
+* decimal 모듈은 소수 형의 연산을 제공
+* built-in float과 비교해 아래와 같은 상황에서 더 유용함
+  * 금융 application
+  * over precision 제어
+  * 법이나 규제 요건에 맞도록 over rounding 제어 
+  * 기타 등등.. ㅎㅎ
+* 아래 예제는 70cent의 전화 요금에 대해 5% 세금을 계산하는 코드
+  * 반올림 했을 때의 결과 차이를 보임
 ```python
 >>> from decimal import *
 >>> round(Decimal('0.70') * Decimal('1.05'), 2)
@@ -255,7 +267,8 @@ Decimal('0.74')
 >>> round(.70 * 1.05, 2)
 0.73
 ```
-* ...
+* Decimal은 결과의 원하는 소수 점 아래를 계속 0으로 유지
+* 따라서 정확한 표현은 Decimal 클래스로 modulo 계산을 할 수 있게 해줌
 ```python
 >>> Decimal('1.00') % Decimal('.10')
 Decimal('0.00')
@@ -267,7 +280,7 @@ True
 >>> sum([0.1]*10) == 1.0
 False
 ```
-* ...
+* Decimal 모듈은 더 높은 정확도에 대한 계산을 제공
 ```python
 >>> getcontext().prec = 36
 >>> Decimal(1) / Decimal(7)
