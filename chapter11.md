@@ -170,12 +170,15 @@ CRITICAL:root:Critical error -- shutting down
 * logging 시스템은 개발자가 수정할 수 있음
 
 ## 11.6 Weak References
-* 파이선은 메모리 관리를 자동적으로 함
-  * reference가 대부분의 obj들의 수를 세고 cycle들을 없애기 위해 garbage collection을 하는 방식
+* **파이선은 메모리 관리를 자동적으로 함**
+  * ~~reference가 대부분의 obj들의 수를 세고~~
+  * 대부분의 obj에 대해 reference counting (refer 하는 포인터의 개수를 셈)해서 
+  * cycle들을 없애기 위해 garbage collection을 하는 방식
 * 이 방식은 대부분의 경우 잘 작동되지만 특정 사용에서는 obj들을 traking 해야 할 수 있음
 * weakref 모듈이 바로 이런 경우를 위한 라이브러리
 * 이는 모든 obj들을 traking 하면서 reference를 생성하고 obj가 필요 없어지면 자동적으로 weakref 테이블을 삭제하는 방식
   * 이 때 callback이 trigger 됨
+  * **인터넷 이미지 캐싱 등에 사용됨**
 ```python
 >>> import weakref, gc
 >>> class A:
