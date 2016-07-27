@@ -4,12 +4,9 @@
 
 ## 14.1. 탭(Tab) 완성과 이력 조작
 
-- 변수 명과 모듈 이름의 자동 완성은 인터프리터의 시작시에 자동으로 활성화 되어 있다. 따라서 ```Tab``` 키를 이용하여 해당 기능을 사용할 수 있다. 이는 Python 명령어 이름과 현재 지역 변수, 사용가능한 모듈 명 등에 사용할 수 있다. ```string.a```와 같은 점 표현식(dotted expressions)에서는 마지막 점 ```'.'```을 판별하여 해당 object의 적절한 어트리뷰트의 자동완성을 제안하여 준다.
+- 변수 명과 모듈 이름의 자동 완성은 인터프리터의 시작시에 자동으로 활성화 되어 있다. 따라서 `Tab` 키를 이용하여 해당 기능을 사용할 수 있다. 이는 Python 명령어 이름과 현재 지역 변수, 사용가능한 모듈 명 등에 사용할 수 있다. `string.a`와 같은 점 표현식(dotted expressions)에서는 마지막 점 `'.'`을 판별하여 해당 object의 적절한 어트리뷰트의 자동완성을 제안하여 준다. 참고로, `__getattr__()` 메소드를 포함하는 object의 경우 어플리케이션에서 정의된 코드를 실행할 수 있다.(?) 또, 사용자의 이력(history)은 사용자 폴더 하위의 `.python_history` 이름의 파일에 저장되도록 기본 설정 되어있다. 이 이력은 다음 인터프리터 세션 이용 시에 다시 이용될 수 있다.
 
-Completion of variable and module names is automatically enabled at interpreter startup so that the Tab key invokes the completion function; it looks at Python statement names, the current local variables, and the available module names. For dotted expressions such as string.a, it will evaluate the expression up to the final '.' and then suggest completions from the attributes of the resulting object. Note that this may execute application-defined code if an object with a __getattr__() method is part of the expression. The default configuration also saves your history into a file named .python_history in your user directory. The history will be available again during the next interactive interpreter session.
+## 14.2. 상호작용 인터프리터(Interactive Interpreter) 의 대안
 
-## 14.2. Alternatives to the Interactive Interpreter
-
-This facility is an enormous step forward compared to earlier versions of the interpreter; however, some wishes are left: It would be nice if the proper indentation were suggested on continuation lines (the parser knows if an indent token is required next). The completion mechanism might use the interpreter’s symbol table. A command to check (or even suggest) matching parentheses, quotes, etc., would also be useful.
-
-One alternative enhanced interactive interpreter that has been around for quite some time is IPython, which features tab completion, object exploration and advanced history management. It can also be thoroughly customized and embedded into other applications. Another similar enhanced interactive environment is bpython.
+- 지금의 환경은 초기 버전의 인터프리터에 비해 대단히 발전하였다. 하지만 몇가지 개선되었으면 하는 부분이 있는데, 예를 들면 연결된 라인들에 대해 적절한 들여쓰기(indentation)를 제안해 주면 좋을 것 같다(파서는 다음에 들여쓰기가 필요할지 알고 있다). 자동완성 동작은 인터프리터의 심볼 테이블을 이용할 것이다. 괄호나 따옴표 등을 체크(혹은 제안)하는 것은 유용할 것이다.
+- 꽤 오랜 시간 발전한 대안 인터프리터 중 하나는 `IPython`인데, 이는 탭 자동완성, 객체 탐색(Object exploration), 그리고 강화된 이력 관리 기능을 제공한다. 이는 또한 완전히 커스터마이즈 되어 다른 어플리케이션에 삽입될 수 있다. 또 다른 유사한 것 중 하나는 `bpython`이다.
