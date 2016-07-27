@@ -28,7 +28,7 @@ python3.5 tutorial 정리 레파지토리
 - 9. Classes: 민정
 - 10. Brief Tour of the Standard Library: 현욱
 - [11. Brief Tour of the Standard Library – Part II](./chapter11.md): 세린 
-  - [참고] Python 메모리 관리: https://speakerdeck.com/devunt/the-hitchhikers-guide-to-the-python-memory
+  - [참고] [Python 메모리 관리 관련 자료](https://speakerdeck.com/devunt/the-hitchhikers-guide-to-the-python-memory)
 
 
 ### 3주차
