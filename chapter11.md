@@ -201,7 +201,7 @@ Traceback (most recent call last):
 KeyError: 'primary'
 ```
 
-## 11.7 Tools for workign with lists
+## 11.7 Tools for working with lists
 * 많은 자료구조들은 built-in list 형을 필요로 함
 * 하지만 다른 성능 trade-off로 인해 다른 구현을 필요로함
 * array 모듈은 유일한 데이터많은 저장하는 array() obj를 제공함
