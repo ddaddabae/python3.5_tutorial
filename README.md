@@ -34,7 +34,7 @@ python3.5 tutorial 정리 레파지토리
 ### 3주차
 
 - 12. Virtual Environments and Packages: 민정
-- [13. What Now?:](./chapter13.md): 일규
+- [13. What Now?](./chapter13.md): 일규
 - 14. Interactive Input Editing and History Substitution: 현욱
 - [15. Floating Point Arithmetic: Issues and Limitations](./chapter15.md): 세린
 - 16. Appendix: 현욱
