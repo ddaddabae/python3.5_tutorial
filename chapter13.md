@@ -1,29 +1,25 @@
-#13. What Now?
+#13. 이제 뭐하지?
 
-Reading this tutorial has probably reinforced your interest in using Python — you should be eager to apply Python to solving your real-world problems.
-Where should you go to learn more?
+이번 튜토리얼을 읽으면 아마 당신의 파이썬에 대한 관심은 깊어질 것이다 — 당신은 파이썬으로 실세계의 문제들을 풀기위해 파이썬을 사용하고 싶어질 것이다. 더 알고 싶다면 어디로 가야할까?
 
-This tutorial is part of Python’s documentation set. Some other documents in the set are:
+이 튜토리얼은 파이썬 도큐먼트의 한 파트이다. 파이썬의 다른 도큐먼트들을 소개해주면 아래와 같다
 
 * The Python Standard Library:
 
-  You should browse through this manual, which gives complete (though terse) reference material about types, functions,
-  and the modules in the standard library. The standard Python distribution includes a lot of additional code.
-  There are modules to read Unix mailboxes, retrieve documents via HTTP, generate random numbers, parse command-line options, 
-  write CGI programs, compress data, and many other tasks.
-  Skimming through the Library Reference will give you an idea of what’s available.
-* Installing Python Modules explains how to install additional modules written by other Python users.
+  이 메뉴얼은 꼭 살펴봐야 할 것이다, 이것은 완벽한 참고 자료이다, types(변수), functions(함수), 그리고 standar library 에 속해있는 모듈까지. 일반적인 파이썬 배포에서는 많은 코드들을 포함하고 있다. Unix mailboxe를 읽는다거나, HTTP를 통하여 문서를 가져온다거나, 난수를 생성하고, 커맨드-라인의 설정을 분석하고, CGI(사용자가 서버에게 웹페이지를 통한 요청이 있었을 때, 그것이 응용프로그램에 의해 처리될 필요가 있다면 서버가 응용프로그램을 실행시키고 필요한 메시지를 받는다. 이때 서버와 응용프로그램 사이에 데이터를 주고 받기 위한 표준화된 방법을 CGI라고 한다.)를 작성하고, 데이터를 압축하고, 다양한 작업들을 할 수 있다. 라이브러리 참조를 살피면, 무엇이 가능한지에 대한 아이디어를 얻을 수 있다.
+  
+* [Installing Python Modules](https://docs.python.org/3/installing/index.html#installing-index)에서는 다른 파이썬 사용자가 작성한 모듈들을 설치하고 사용하는 방법에 대해서 설명하고 있다.
 
-* The Python Language Reference: A detailed explanation of Python’s syntax and semantics. It’s heavy reading, but is useful as a complete guide to the language itself.
+* [The Python Language Reference](https://docs.python.org/3/reference/index.html#reference-index): 파이썬의 자세한 문법과 의미를 설명하고 있다. 읽기 좀 힘들 수 있지만, 언어 자체를 완벽하게 가이드 해주고 있다.
 
-###More Python resources:
-* https://www.python.org: The major Python Web site. It contains code, documentation, and pointers to Python-related pages around the Web. This Web site is mirrored in various places around the world, such as Europe, Japan, and Australia; a mirror may be faster than the main site, depending on your geographical location.
-* https://docs.python.org: Fast access to Python’s documentation.
-* https://pypi.python.org/pypi: The Python Package Index, previously also nicknamed the Cheese Shop, is an index of user-created Python modules that are available for download. Once you begin releasing code, you can register it here so that others can find it.
-* https://code.activestate.com/recipes/langs/python/: The Python Cookbook is a sizable collection of code examples, larger modules, and useful scripts. Particularly notable contributions are collected in a book also titled Python Cookbook (O’Reilly & Associates, ISBN 0-596-00797-3.)
-* http://www.pyvideo.org collects links to Python-related videos from conferences and user-group meetings.
-* https://scipy.org: The Scientific Python project includes modules for fast array computations and manipulations plus a host of packages for such things as linear algebra, Fourier transforms, non-linear solvers, random number distributions, statistical analysis and the like.
+###더 다양한 파이썬 자원들:
+* https://www.python.org: 파이썬의 주요 웹사이트 이다. 여기에서는 코드들, 자료들, 파이썬과 고나련있는 페이지들을 살펴 볼 수 있다. 이 사이트는 세계적(유럽, 일본, 오스트레일리아 등)으로 여러개의 미러 사이트가 존재하고 미러 사이트들은 지리적 위치에 따라 메인 사이트보다 더 빠른 속도로 반응하기도 한다.
+* https://docs.python.org: 파이썬 도큐먼트에 빠른 접속 링크이다.
+* https://pypi.python.org/pypi: 예전에는 Cheese Shop이라고 불리던, 사용자들이 만든 파이썬 모듈들의 다운로드가 가능한 파이썬 패키지 인덱스이다. 한번 코드를 배포하면, 사이트에 등록할 수 있고, 또한 다른 사람들 또한 찾아서 사용할 수 있다.
+* https://code.activestate.com/recipes/langs/python/: The Python Cookbook은  큰 모듈에서 유용한 스크립트까지 상당히 많은 예제들을 포함하고 있다. 특히 주목할만한 기여들을 모아서 책으로 발간되어 있다. 책 제목은 Python Cookbook (O’Reilly & Associates, ISBN 0-596-00797-3.) 이다.
+* http://www.pyvideo.org에서는 컨퍼런스와 사용자-모임 미팅에서 파이썬과 관련이 있는 영상들을 모아두고 있다.
+* https://scipy.org: Scientific Python 프로젝트는 빠른 배열 연산과 교묘함을 포함하고 있는 모듈이다. 이는 선형대수와 퓨리에트랜스폼, 비선형 해결, 난수 분포, 통계분석과 같은 것들을 하는데 도움을 준다.
 
-For Python-related questions and problem reports, you can post to the newsgroup comp.lang.python, or send them to the mailing list at python-list@python.org. The newsgroup and mailing list are gatewayed, so messages posted to one will automatically be forwarded to the other. There are hundreds of postings a day, asking (and answering) questions, suggesting new features, and announcing new modules. Mailing list archives are available at https://mail.python.org/pipermail/.
+파이썬과 관련이 있는 질문 또는 오류 보고들은 comp.lang.python에서 토론할 수 있고, 혹은 질문과 오류에 대해서 python-list@python.org로 메일을 보내도 된다. 토론방과 메일은 연계되어있어 둘 중 하나에만 보고를 하여도 서로 포워딩을 해주고 있다. 매일 수백개의 글들이 새로운 특징을 제안하거나 새로운 모듈들이 올라온다. https://mail.python.org/pipermail에서 기록들을 보관하고 있어 살펴볼 수 있다.
 
-Before posting, be sure to check the list of Frequently Asked Questions (also called the FAQ). The FAQ answers many of the questions that come up again and again, and may already contain the solution for your problem.
+새로운 제안이나 모듈을 올리기 전에 FAQ를 충분히 살펴보기를 바란다. FAQ에서는 이미 당신이 겪고 있는 문제와 관련된 질문에 대하여 답변이 제공되고 있다.
