@@ -26,7 +26,7 @@ python3.5 tutorial 정리 레파지토리
 - 7. Input and Output: 현정
 - [8. Errors and Exceptions](./chapter08.md): 세린 
 - 9. Classes: 민정
-- 10. Brief Tour of the Standard Library: 현욱
+- [10. Brief Tour of the Standard Library](./chapter10.md): 현욱
 - [11. Brief Tour of the Standard Library – Part II](./chapter11.md): 세린 
   - [참고] [Python 메모리 관리 관련 자료](https://speakerdeck.com/devunt/the-hitchhikers-guide-to-the-python-memory)
 
@@ -35,6 +35,6 @@ python3.5 tutorial 정리 레파지토리
 
 - 12. Virtual Environments and Packages: 민정
 - [13. What Now?](./chapter13.md): 일규
-- 14. Interactive Input Editing and History Substitution: 현욱
+- [14. Interactive Input Editing and History Substitution](./chapter14.md): 현욱
 - [15. Floating Point Arithmetic: Issues and Limitations](./chapter15.md): 세린
-- 16. Appendix: 현욱
+- [16. Appendix](./chapter16.md): 현욱
