@@ -24,7 +24,7 @@ $ chmod +x myscript.py
 ### 16.1.3. 상호작용하는(Interactive) 시작(Startup) 파일
 
 - 파이썬을 상호작용 모드로 사용할 때, 인터프리터가 시작할 때 마다 몇몇 표준 명령들이 자동으로 실행되도록 하는 것은 종종 유용하게 사용된다. 당신은 `PYTHONSTARTUP`이라는 이름의 환경변수에 당신의 시작시 실행할 커맨드가 포함된 파일의 이름을 설정함으로써 이런 시작파일 기능을 이용할 수 있다. 이는 유닉스 쉘의 `.profile` 기능과 유사하다.
-- 이 파일은 상호작용 세션에서만 읽혀지며, Python이 스크립트 파일을 실행하는 경우는 읽혀지지 않는다. 또한 [`/dev/tty`](http://stackoverflow.com/questions/10435308/what-is-dev-tty-in-unix)이 시작 파일로 지정된 경우에도 실행되지 않는다. 시작 파일은 상호작용 명령어가 실행되는 것과 같은 namespace에서 실행된다. 따라서 상호작용 세션에서 제한없이 object를 정의하고 import할 수 있다. 또한 프롬프트의 [`sys.ps1`](https://wikidocs.net/78)과 `sys.ps2`를 파일에서 변경할 수 있다.
+- 이 파일은 상호작용 세션에서만 읽혀지며, Python이 스크립트 파일을 실행하는 경우는 읽혀지지 않는다. 또한 [`/dev/tty`](http://stackoverflow.com/questions/10435308/what-is-dev-tty-in-unix)이 source로 지정된 경우에도 실행되지 않는다. 시작 파일은 상호작용 명령어가 실행되는 것과 같은 namespace에서 실행된다. 따라서 상호작용 세션에서 제한없이 object를 정의하고 import할 수 있다. 또한 프롬프트의 [`sys.ps1`](https://wikidocs.net/78)과 `sys.ps2`를 파일에서 변경할 수 있다.
 - 만약 현재 경로에서 추가적인 시작 파일을 읽어오고 싶다면, 글로벌 시작 파일을 `if os.path.isfile('.pythonrc.py'): exec(open('.pythonrc.py').read())` 와 같은 코드를 이용하여 설정할 수 있다. 만약 스크립트 파일에서 시작 파일을 이용하고 싶다면, 아래 코드를 스크립트 파일에 포함시켜야 한다.
 ```python
 import os
